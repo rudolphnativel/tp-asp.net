@@ -23,7 +23,9 @@ namespace Tp_1_module3
             Console.WriteLine();
            //nombre moyen de pages
            var moyenne = ListeLivres.GroupBy(l => l.Auteur);
-            Console.WriteLine($"nombre moyen de pages {moyenne}" );
+            Console.WriteLine($"nombre moyen de pages " );
+            Console.WriteLine($"");
+            Console.ReadKey();
         }
         private static List<Auteur> ListeAuteurs = new List<Auteur>();
         private static List<Livre> ListeLivres = new List<Livre>();
