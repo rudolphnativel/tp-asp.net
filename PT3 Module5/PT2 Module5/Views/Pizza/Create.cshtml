@@ -1,0 +1,32 @@
+﻿@model PT2_Module5.Models.PizzaVm
+
+
+    <h2>Création d'une pizza</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    <div class="container text-danger text-capitalize" >
+        @ViewBag.message
+    </div>
+<div class="container">
+    @Html.Partial("_EditPizza",Model)
+      <div class="row">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+   
+</div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

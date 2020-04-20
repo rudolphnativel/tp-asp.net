@@ -1,0 +1,47 @@
+﻿@model PT2_Module5.Models.PizzaVm
+    <div class="form-group">
+        @Html.ValidationSummary(false,"",new { @class = "text-danger"})
+        @Html.LabelFor(model => model.pizza.Nom, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @if (Model.listePate != null && Model.listePate.Count > 0)
+            {
+                @Html.EditorFor(model => model.pizza.Nom, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.pizza.Nom, "", new { @class = "text-danger" })
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.pizza.Nom)
+            }
+        </div>
+    </div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.pizza.Pate, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @if (Model.listePate != null && Model.listePate.Count > 0)
+        {
+            @Html.DropDownListFor(model => model.IdPate, Model.listePate, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.pizza.Pate, "", new { @class = "text-danger" })
+        }
+        else
+        {
+            @Html.DisplayFor(model => model.pizza.Pate.Nom)
+        }
+
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.pizza.Ingredients, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @if (Model.listeIngredient != null && Model.listeIngredient.Count > 0)
+        {
+            @Html.ListBoxFor(model => model.IdsIngredients, Model.listeIngredient, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.pizza.Ingredients, "", new { @class = "text-danger" })
+        }
+        else
+        {
+            @Html.ListBoxFor(model => model.IdsIngredients, Model.pizza.Ingredients.Select(x => new SelectListItem() { Text = x.Nom }), new { @class = "form-control", @disabled = "disabled" })
+        }
+    </div>
+</div>
