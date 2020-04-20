@@ -1,0 +1,24 @@
+﻿@model PT2_Module5.Models.Pizza
+
+<dt>
+    @Html.DisplayNameFor(model => model.Nom)
+</dt>
+
+
+
+<dd>
+    @Html.DisplayFor(model => model.Nom)
+</dd>
+<dd>
+    @Html.DisplayFor(model => model.Pate.Nom)
+</dd>
+@if (Model != null)
+{
+    foreach (var item in Model.Ingredients)
+    {
+        <dd>
+            @Html.DisplayFor(modelItem => item.Nom)
+        </dd>
+
+    }
+}
