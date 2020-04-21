@@ -1,0 +1,5 @@
+D:\cour asp.net\Cours 250 - Module 6\Module 06 - Énoncé TP 01 - Le Dojo – partie 1\Ressources Module 06 - Enoncé TP 01\bin\Debug\BO.dll
+D:\cour asp.net\Cours 250 - Module 6\Module 06 - Énoncé TP 01 - Le Dojo – partie 1\Ressources Module 06 - Enoncé TP 01\bin\Debug\BO.pdb
+D:\cour asp.net\Cours 250 - Module 6\Module 06 - Énoncé TP 01 - Le Dojo – partie 1\Ressources Module 06 - Enoncé TP 01\obj\Debug\BO.csproj.CoreCompileInputs.cache
+D:\cour asp.net\Cours 250 - Module 6\Module 06 - Énoncé TP 01 - Le Dojo – partie 1\Ressources Module 06 - Enoncé TP 01\obj\Debug\BO.dll
+D:\cour asp.net\Cours 250 - Module 6\Module 06 - Énoncé TP 01 - Le Dojo – partie 1\Ressources Module 06 - Enoncé TP 01\obj\Debug\BO.pdb
