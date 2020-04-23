@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="form-group row">
-        @Html.LabelFor(model => model.samourai.ArtMatials, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.samourai.ArtMartials, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @if (Model.artMartials != null && Model.artMartials.Count() > 0)
             {
@@ -61,7 +61,7 @@
             else
             if (Model.samourai != null)
             {
-                @Html.ListBoxFor(model => model.samourai.ArtMatials, Model.samourai.ArtMatials.Select(x => new SelectListItem() { Text = x.Nom }), new { @class = "form-control", @disabled = "disabled" })
+                @Html.ListBoxFor(model => model.samourai.ArtMartials, Model.samourai.ArtMartials.Select(x => new SelectListItem() { Text = x.Nom }), new { @class = "form-control", @disabled = "disabled" })
             }
 
         </div>
