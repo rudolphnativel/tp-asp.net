@@ -1,0 +1,16 @@
+﻿@model tp1_module_6.Models.SamouraisVm
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div class="container">
+
+    @Html.Partial("_Samourai", Model)
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.samourai.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
